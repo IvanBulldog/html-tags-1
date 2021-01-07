@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/details-1-background.jpg);
+    background-size: cover;
+    height: 800px;
+}
+ul li img {
+    width: 10%;
+}
+.logo {
+    width: 10%;
+}
+.intro-info img {
+    width: 10%;
+}
