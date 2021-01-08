@@ -282,18 +282,27 @@
             <div class="container-right-form">
                 <form action="call-me-form">
                     <div>
-                        <label for="name"><input type="text" name="name" placeholder="Name" required></label>
+                        <label for="iname"></label>
+                        <input type="text" name="name" id="iname" placeholder="Name" required>
                     </div>
                     <div>
-                        <label for="phone"><input type="text" name="phone" placeholder="Phone" required></label>
+                        <label for="iphone"></label>
+                        <input type="text" name="phone" id="iphone" placeholder="Phone" required>
                     </div>
                     <div>
-                        <label for="mail"><input type="email" name="email" placeholder="Email" required></label>
+                        <label for="pemail"></label>
+                        <input type="email" name="email" id="pemail" placeholder="Email" required>
                     </div>
                     <div>
-                        <div><label for="list"><input type="list" name="list" placeholder="Interested-in"></label></div>
-                        <div><input type="checkbox" value="Agree-terms" name="Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a>and <a href="terms-conditions.html">Terms & Conditions</a></div>
-                        <div><button type="submit" class="button-call-me"> CALL ME</button></div>
+                        <div><label for="plist"></label>
+                            <input type="list" name="list" id="plist" placeholder="Interested-in">
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Agree-terms" name="Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a>and <a href="terms-conditions.html">Terms & Conditions</a>
+                        </div>
+                        <div>
+                            <button type="submit" class="button-call-me"> CALL ME</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -413,20 +422,20 @@
             <div class="right-column">
                 <form action="contact-form">
                     <div>
-                        <label for="name"></label>
-                        <input type="text" name="name" placeholder="Name">
+                        <label for="pname"></label>
+                        <input type="text" name="name" id="pname" placeholder="Name">
                     </div>
                     <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" placeholder="Email">
+                        <label for="pemail"></label>
+                        <input type="email" name="email" id="pemail" placeholder="Email">
                     </div>
                     <div>
-                        <label for="textarea"></label>
-                        <textarea name="textarea" id="message" cols="30" rows="10"></textarea>
+                        <label for="ptextarea"></label>
+                        <textarea name="textarea" id="message" id="ptextarea" cols="30" rows="10"></textarea>
                     </div>
                     <div>
-                        <label for="checkbox"></label>
-                        <input type="checkbox" value="Agreed-Terms">I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                        <label for="pcheckbox"></label>
+                        <input id="pcheckbox" type="checkbox" value="Agreed-Terms">I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
                     </div>
                     <div>
                             <button type="submit" class="form-control-submit-button disabled">SUBMIT MESSAGE</button>
