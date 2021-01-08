@@ -1,23 +1,11 @@
 body {
     margin: 0 auto;
 }
-.header {
-    background-image: url(../img/details-1-background.jpg);
+header {
+    background-image: url(../img/header-background.jpg);
     background-size: cover;
-    height: 800px;
+    background-position: center;
 }
-ul li img {
-    width: 10%;
-}
-.logo {
-    width: 10%;
-}
-.intro-info img {
-    width: 10%;
-}
-.call-me {
-    background-color: #153e52;
-}
-.members-icon {
-    width: 1%;
+.soc-icon {
+    background-image: url(../img/hexagon-green.svg);
 }
