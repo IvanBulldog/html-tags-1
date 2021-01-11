@@ -45,6 +45,38 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.navbar-custom {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    background-color: #113448;
+    box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+    font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
+    transition: all 0.2s;
+}
+
+@media (min-width: 768px) {
+.navbar-custom {
+    padding: 2.125rem 1.5rem 2.125rem 2rem;
+    box-shadow: none;
+    background: transparent;
+}
+}
+
+@media (min-width: 992px) {
+.navbar-custom .fa-stack-1x {
+    font-size: 0.6875rem;
+    line-height: 1.625rem;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+}
+
+@media (max-width: 768px) {
+    .navbar-info .menu {
+    display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .details-top-servisec {
         height: 34.625rem;
@@ -331,6 +363,9 @@ header {
     border-radius: 0.25rem;
     transition: all 0.3s;
 }
+.image-container img {
+    width: 100%;
+}
 
 /*.intro-list {
     display: flex;
@@ -434,7 +469,7 @@ header {
 }
 
 @media (min-width: 992px) {
-    .cards-1 div.card:nth-child(3n+2) {
+    .intro-list div.intro-info1:nth-child(3n+2) {
         margin-right: 2.5rem;
         margin-left: 2.5rem;
     }
@@ -576,6 +611,10 @@ header {
     margin-left: auto;
 }
 
+.projects img {
+    max-width: 100%;
+}
+
 .projects-tems {
     display: flex;
     flex-wrap: wrap;
@@ -641,9 +680,17 @@ h2 {
         height: 36.125rem;
     }
 }
-
+.services-bottom-right {
+    height: 27rem;
+    background-image: url(../img/details-2-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 @media (min-width: 992px) {
     .services-bottom-right {
+        background-image: url(../img/details-2-background.jpg);
         width: 50%;
         height: 100%;
         display: inline-block;
@@ -668,14 +715,24 @@ h2 {
     }
 }
 
+.services-detail-info {
+    width: 70%;
+}
+
 .bg-services-bottom-right {
     background-image: url(../img/details-2-background.jpg);
     background-size: cover;
-    width: 500px;
-    height: 500px;
+}
+
+.detail-services {
+    max-width: 100%;
 }
 
 .selection-title {
     color: #14bf98;
     font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
+}
+
+.about img {
+    max-width: 100%;
 }
