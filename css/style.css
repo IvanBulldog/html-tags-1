@@ -8,6 +8,14 @@ body, p {
     color: #787976;
     font: 400 1rem/1.5625rem "Open Sans", sans-serif;
 }
+.p-large {
+    font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
+}
+.job-title {
+    margin-bottom: 0.75rem;
+    color: #484a46;
+    font: 700 1rem/1.375rem "Montserrat", sans-serif;
+}
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -72,9 +80,24 @@ header {
     color: white;
     text-decoration: none;
 }
-
-.soc-icon {
+.hexagon {
+    width: 1.625rem;
+    height: 1.625rem;
+    position: absolute;
+    background: url(../img/hexagon-green.svg) center center no-repeat;
+    background-size: 1.625rem 1.625rem;
+    transition: all 0.2s ease;
+}
+.fa-stack-1x {
+    font-size: 0.6875rem;
+    line-height: 1.625rem;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.menu [for="soc-icon"] {
     background-image: url(../img/hexagon-green.svg);
+    background-position: center;
+    background-size: cover;
     width: 26px;
     height: 26px;
 }
@@ -226,6 +249,39 @@ header {
     padding-top: 3rem;
     padding-bottom: 2.875rem;
 }
+.intro-list .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    line-height: 6rem;
+    text-align: left;
+}
+.intro-list .fa-stack .hexagon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: url(../img/hexagon-green.svg) center center no-repeat;
+    background-size: 6rem 6rem;
+}
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.fa-stack-1x {
+    line-height: inherit;
+}
+.fa-stack-1x, .fa-stack-2x {
+    left: auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.intro-list .fa-stack-1x {
+    color: #fff;
+    font-size: 2rem;
+}
 
 @media (min-width: 992px){
     .intro-list {
@@ -302,7 +358,8 @@ header {
     max-width: 21rem;
 }
 }
-.intro-list .soc-icon{
+.intro-list [for="soc-icon"]{
+    background-image: url(../img/hexagon-green.svg);
     background-size: cover;
     background-position: center;
     width: 96px;
@@ -332,12 +389,119 @@ header {
     padding-top: 6.625rem;
     padding-bottom: 1.25rem;
     background-color: #fbfbfb;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-.services-info {
-    display: -ms-flexbox;
+.services-info h2 {
+    margin-bottom: 3.25rem;
+}
+.cart {
+    max-width: 20.875rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5.625rem;
+    border: none;
+    background-color: transparent;
+}
+.cart:nth-child(3n+2){
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.cart img {
+    max-width: 100%;
+}
+.green-button {
+    display: inline-block;
+    padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
+    border: 0.125rem solid #14bf98;
+    border-radius: 0.25rem;
+    background-color: #14bf98;
+    color: #fff;
+    font: 700 0.75rem/0 "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+
+
+
+
+.team-members [for="soc-icon"] {
+    background-image: url(../img/hexagon-green.svg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+.left-column [for="soc-icon"] {
+    background-image: url(../img/hexagon-green.svg);
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+}
+.projects {
+    max-width: 1140px;
+    padding-top: 6.5rem;
+    padding-bottom: 7rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.projects-tems {
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    flex: 0 0 100%;
+}
+h3 {
+    color: #484a46;
+    font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
+}
+.projects-text-h3 {
+    text-align: center;
+}
+@media (min-width: 1200px){
+    .projects-basic {
+    max-width: 1140px;
+    }
+}
+.projects-basic{
+    text-align: center;
+    padding-top: 6.375rem;
+    padding-bottom: 3.375rem;
+    background-color: #fbfbfb;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.projects-team-members-info .team-members {
+    display: inline-block;
+}
+h2 {
+    color: #484a46;
+    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+.bg-image-services {
+    background-image: url(../img/details-1-background.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+.bg-services-bottom-right {
+    background-image: url(../img/details-2-background.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+.selection-title {
+    color: #14bf98;
+    font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
 }

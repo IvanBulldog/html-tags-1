@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +23,20 @@
                 <li class="non-active"><a href="#about" class="about-btn">ABOUT</a></li>
                 <li class="non-active"><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="soc-icon">    
-            </div>
-            <div class="soc-icon">            
-            </div>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
         </div>
     </nav>
     <header id="home">
@@ -55,29 +66,38 @@
             </div>
             <div class="intro-list basic-container">
                 <div class="intro-info">
-                    <div class="soc-icon"></div>
+                    <span class="fa-stack">
+                        <span class="hexagon"></span>
+                        <i class="fas fa-binoculars fa-stack-1x"></i>
+                    </span>
                     <h4 class="black-paragraph">Environment Analysis</h4>
                     <p class="gray-paragraph">The starting point of any success story is knowing your current position in the business environment</p>
                 </div>
                 <div class="intro-info intro-info1">
-                    <div class="soc-icon"></div>
+                    <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-list-alt fa-stack-1x"></i>
+                        </span>
                     <h4 class="black-paragraph">Development Planning</h4>
                     <p class="gray-paragraph">After completing the environmental analysis the next stage is to design and  plan your development strategy</p>
                 </div>
                 <div class="intro-info">
-                    <div class="soc-icon"></div>
+                    <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                        </span>
                     <h4 class="black-paragraph">Execution & Evaluation</h4>
                     <p class="gray-paragraph">In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
                 </div>
             </div>
         </div>
-        <div class="services basic-container" id="services">
+        <div class="services" id="services">
             <div class="services-info">
-                <h2>SERVICES</h2>
-                <p>Choose The Service Package<br> That Suits Your Needs</p>
+                <div class="selection-title">SERVICES</div>
+                <h2>Choose The Service Package<br> That Suits Your Needs</h2>
             </div>
             <div class="services-cart">
-                <div>
+                <div class="cart">
                     <img src="img/services-1.jpg" alt="services">
                     <h3>Off The Ground</h3>
                     <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
@@ -88,7 +108,7 @@
                     <p>Starting at $199</p>
                     <button class="green-button">DETAILS</button>
                 </div>
-                <div>
+                <div class="cart">
                     <img src="img/services-2.jpg" alt="services">
                     <h3>Accelerated Growth</h3>
                     <p>Use this service pack to give your company the necessary impulse to become an industry leader</p>
@@ -99,7 +119,7 @@
                     <p>Starting at $299</p>
                     <button class="green-button">DETAILS</button>
                 </div>
-                <div>
+                <div class="cart">
                     <img src="img/services-3.jpg" alt="services">
                     <h3>Market Domination</h3>
                     <p>You already are a reference point in your industry now you need to learn about acquisitions</p>
@@ -345,31 +365,79 @@
                 <div class="projects-team-members-info">
                     <div class="team-members">
                         <img src="img/team-1.png" alt="Members">
-                        <p>John Whitelong</p>
-                        <p>General Manager</p>
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
+                        <p class="p-large">John Whitelong</p>
+                        <p class="job-title">General Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
                     </div>
                     <div class="team-members">
                         <img src="img/team-2.png" alt="Members">
-                        <p>Veronique Smith</p>
-                        <p>Business Developer</p>
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
+                        <p class="p-large">Veronique Smith</p>
+                        <p class="job-title">Business Developer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
                     </div>
                     <div class="team-members">
                         <img src="img/team-3.png" alt="Members">
-                        <p>Chris Zimerman</p>
-                        <p>Online Marketer</p>
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
+                        <p class="p-large">Chris Zimerman</p>
+                        <p class="job-title">Online Marketer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
                     </div>
                     <div class="team-members">
                         <img src="img/team-4.png" alt="Members">
-                        <p>Mary Villalonga</p>
-                        <p>Community Manager</p>
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
-                        <img src="img/hexagon-green.svg" alt="icon" class="members-icon">
+                        <p class="p-large">Mary Villalonga</p>
+                        <p class="job-title">Community Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -416,12 +484,42 @@
                         </ul>
                 </div>
                 <h3>Follow Aria On Social Media</h3>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>1</span>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>2</span>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>3</span>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>4</span>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>5</span>
-                <span><a href="#your-link"></a><span class="bg-icon"></span>6</span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-pinterest fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-behance fa-stack-1x"></i>
+                    </a>
+                </span>
             </div>
             <div class="right-column">
                 <form action="contact-form">
