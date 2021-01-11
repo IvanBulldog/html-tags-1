@@ -34,7 +34,14 @@ header {
     right: 0;
     left: 0;
     z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.5);
 } 
+@media (min-width: 992px) {
+    .details-top-servisec {
+    height: 34.625rem;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-info {
         padding: 2.125rem 1.5rem 2.125rem 2rem;
@@ -101,6 +108,12 @@ header {
     width: 26px;
     height: 26px;
 }
+.border {
+    padding-top: 8rem;
+    padding-bottom: 2.125rem;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .border {
     padding-top: 13rem;
@@ -116,12 +129,11 @@ header {
         padding-bottom: 15rem;
     }
 }
-.border {
-    text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+@media (min-width: 1200px) {
+    .border {
+    padding-top: 14.75rem;
+    padding-bottom: 17.5rem;
+    }
 }
 @media (min-width: 768px){
     .border h1 {
@@ -173,7 +185,7 @@ header {
     padding-top: 6.5rem;
     padding-bottom: 3rem;
 }
-.basic-container {
+/*.basic-container {
     display: flex;
     width: 100%;
     padding-right: 15px;
@@ -181,6 +193,34 @@ header {
     margin-right: auto;
     margin-left: auto;
 }
+/* ------------------*/
+@media (min-width: 576px){
+.basic-1 {
+    max-width: 540px;
+    margin: auto;
+}
+}
+@media (min-width: 768px){
+.basic-1 {
+    max-width: 720px;
+    margin: auto;
+}
+}
+@media (min-width: 992px){
+.basic-1 {
+    max-width: 960px;
+    margin: auto;
+}
+}
+@media (min-width: 1200px){
+.basic-1 {
+    max-width: 1140px;
+    margin: auto;
+}
+}
+
+
+/*-------------*/
 @media (min-width: 992px) {
     .basic-1 {
         padding-top: 6.875rem;
@@ -200,6 +240,12 @@ header {
 @media (min-width: 992px){
     .basic-container {
         max-width: 960px;
+        display: flex;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 @media (min-width: 1200px) {
@@ -244,11 +290,11 @@ header {
     border-radius: 0.25rem;
     transition: all 0.3s;
 }
-.intro-list {
+/*.intro-list {
     display: flex;
     padding-top: 3rem;
     padding-bottom: 2.875rem;
-}
+}*/
 .intro-list .fa-stack {
     width: 6rem;
     height: 6rem;
@@ -283,39 +329,39 @@ header {
     font-size: 2rem;
 }
 
-@media (min-width: 992px){
+@media (min-width: 576px) {
     .intro-list {
-    max-width: 960px;
+    max-width: 540px;
+    margin: auto;
 }
 }
 @media (min-width: 768px){
     .intro-list {
     max-width: 720px;
+    margin: auto;
 }
 }
-@media (min-width: 576px) {
+@media (min-width: 992px){
     .intro-list {
-    max-width: 540px;
+    max-width: 960px;
 }
 }
-
 @media (min-width: 1200px) {
         .intro-list {
         max-width: 1140px;
     }
 }
-@media (min-width: 1200px) {
-    .intro-info {
-    max-width: 21rem;
-}
-}
-
 @media (min-width: 992px) {
     .intro-info {
     display: inline-block;
     max-width: 17.5rem;
     text-align: left;
     vertical-align: top;
+}
+}
+@media (min-width: 1200px) {
+    .intro-info {
+    max-width: 21rem;
 }
 }
 .intro-info {
@@ -392,6 +438,15 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+.price {
+    margin-bottom: 0.25rem;
+    color: #484a46;
+    font: 700 1rem/1.5rem "Montserrat", sans-serif;
+    text-align: center;
+}
+.price span {
+    color: #14bf98;
 }
 .services-info h2 {
     margin-bottom: 3.25rem;
@@ -490,10 +545,47 @@ h2 {
     font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
 }
 .bg-image-services {
+    height: 27rem;
     background-image: url(../img/details-1-background.jpg);
     background-size: cover;
-    width: 500px;
-    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+    .bg-image-services {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+.detail-bottom-services {
+    height: 36.125rem;
+}
+}
+@media (min-width: 992px) {
+.services-bottom-right {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+}
+@media (min-width: 992px) {
+.services-bottom-left {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+}
+@media (min-width: 992px) {
+.services-detail-info {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    }
 }
 .bg-services-bottom-right {
     background-image: url(../img/details-2-background.jpg);
