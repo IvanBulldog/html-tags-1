@@ -7,21 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria - Business</title>
+    <link rel="icon" href="../img/favicon.png">
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".fixed-top">
+    <a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a>
     <nav class="navbar-info navbar-custom">
         <div class="logo">
             <img src="img/logo.svg" alt="Aria-logo">
         </div>
         <div class="menu">
             <ul>
-                <li class="active"><a href="#home">HOME</a></li>
-                <li class="non-active"><a href="#intro">INTRO</a></li>
-                <li class="non-active"><a href="#services">SERVICES</a></li>
-                <li class="non-active"><a href="#callme">CALL ME</a></li>
-                <li class="non-active"><a href="#projects">PROJECTS</a></li>
-                <li class="non-active"><a href="#about" class="about-btn">ABOUT</a></li>
-                <li class="non-active"><a href="#contact">CONTACT</a></li>
+                <li class="active"><a href="#home">home</a></li>
+                <li class="non-active"><a href="#intro">intro</a></li>
+                <li class="non-active"><a href="#services">services</a></li>
+                <li class="non-active"><a href="#callme">callme</a></li>
+                <li class="non-active"><a href="#projects">projects</a></li>
+                <li class="non-active"><a href="#about" class="about-btn">about</a></li>
+                <li class="non-active"><a href="#contact">contact</a></li>
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
@@ -136,98 +139,111 @@
             <div class="details-top-servisec">
                 <div class="bg-image-services"></div>
                 <div class="services-detail-info">
-                    <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
-                    <div class="item">
-                        <div class="active">
-                            <span class="services-numbers-font">1</span><span> How Can Aria Help Your Business</span> 
+                    <div class="accordion-container">
+                        <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+                        <div class="item">
+                            <div class="active">
+                                <span class="services-numbers-font">1</span>
+                                <span class="accordion-title"> How Can Aria Help Your Business</span> 
+                            </div>
+                            <div class="accordion">
+                                <p class="accordion-body">At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+                        <div class="item">
+                            <div class="non-active">
+                                <span class="services-numbers-font">2</span>
+                                <span class="accordion-title"> Great Strategic Business Planning</span>
+                            </div>
+                            <div class="accordion">
+                                <p class="accordion-body">Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="non-active">
-                            <span class="services-numbers-font">2</span><span> Great Strategic Business Planning</span>
-                        </div>
-                        <div>
-                            <p>Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="non-active">
-                            <span class="services-numbers-font">3</span><span> Online Marketing Campaigns</span>
-                        </div>
-                        <div>
-                            <p>An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.</p>
+                        <div class="item">
+                            <div class="non-active">
+                                <span class="services-numbers-font">3</span>
+                                <span class="accordion-title"> Online Marketing Campaigns</span>
+                            </div>
+                            <div class="accordion">
+                                <p class="accordion-body">An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="detail-bottom-services">
-                <div class="services-bottom-left">
-                    <div class="js-list-menu">
-                        <ul>
-                            <li>Business</li>
-                            <li>Expertise</li>
-                            <li>Qualiti</li>
-                        </ul>
-                    </div>
-                    <div class="js-list-text">
-                        <div class="busines-container">
-                            <h4>Business Services For Companies</h4>
-                            <p>Aria provides the most innovative and customized business services in the industry. Our <a href="#services">Services</a> section shows how flexible we are for all types of budgets.</p>
-                            <div class="progresbar-content">
-                                <p>Business Development 100%</p>
-                                <div class="progresbar-list">
-                                </div>
-                                <p>Opportunity Spotting 76%</p>
-                                <div class="progresbar-list">
-                                </div>
-                                <p>Online Marketing 90%</p>
-                                <div class="progresbar-list">
+            <div class="detail-bottom-services tabs">
+                <div class="area-1">
+                    <div class="services-bottom-left">
+                        <div class="js-list-menu">
+                            <ul>
+                                <li class="active nav-link"><i class="fas fa-th"></i>Business</li>
+                                <li class="nav-link"><i class="fas fa-th"></i>Expertise</li>
+                                <li class="nav-link"><i class="fas fa-th"></i>Qualiti</li>
+                            </ul>
+                        </div>
+                        <div class="js-list-text" id="tab-1">
+                            <div class="busines-container">
+                                <h4>Business Services For Companies</h4>
+                                <p>Aria provides the most innovative and customized business services in the industry. Our <a href="#services" class="green">Services</a> section shows how flexible we are for all types of budgets.</p>
+                                <div class="progress-container">
+                                    <p class="title">Business Development 100%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar first">
+                                        </div>    
+                                    </div>
+                                    <p class="title">Opportunity Spotting 76%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar second">
+                                        </div>
+                                    </div>
+                                    <p class="title">Online Marketing 90%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar third">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="expertise-container">
-                            <ul class="media">
-                                <li class="media-list">
-                                    <div class="media-number">1</div>
-                                    <p class="media-body"><strong>Hight qualiti</strong> is on top of our list when it comes to the way we deliver the services</p>
-                                </li>
-                                <li class="media-list">
-                                    <div class="media-number">2</div>
-                                    <p class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</p>
-                                </li>
-                                <li class="media-list">
-                                    <div class="media-number">3</div>
-                                    <p class="media-body"><strong>Qualiti standart</strong> are important but meant to be exceeded</p>
-                                </li>
-                            </ul>
-                            <ul class="media">
-                                <li class="media-list">
-                                    <div class="media-number">4</div>
-                                    <p class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</p>
-                                </li>
-                                <li class="media-list">
-                                    <div class="media-number">5</div>
-                                    <p class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</p>
-                                </li>
-                                <li class="media-list">
-                                    <div class="media-number">6</div>
-                                    <p class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="qualiti-container">
-                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a href="#">with huge potential</a></p>
-                            <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a href="">the stakeholders</a></p>
-                            <ul>
-                                <li>It's easy to get a quotation, just call our office anytime</li>
-                                <li>We'll get back to you with an initial estimate soon</li>
-                                <li>Get ready to see results even after only 30 days</li>
-                                <li>Ask for a quote and start improving your business</li>
-                                <li>Just fill out the form and we'll call you right away</li>
-                            </ul>
+                            <div class="expertise-container">
+                                <ul class="media">
+                                    <li class="media-list">
+                                        <div class="media-number">1</div>
+                                        <p class="media-body"><strong>Hight qualiti</strong> is on top of our list when it comes to the way we deliver the services</p>
+                                    </li>
+                                    <li class="media-list">
+                                        <div class="media-number">2</div>
+                                        <p class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</p>
+                                    </li>
+                                    <li class="media-list">
+                                        <div class="media-number">3</div>
+                                        <p class="media-body"><strong>Qualiti standart</strong> are important but meant to be exceeded</p>
+                                    </li>
+                                </ul>
+                                <ul class="media">
+                                    <li class="media-list">
+                                        <div class="media-number">4</div>
+                                        <p class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</p>
+                                    </li>
+                                    <li class="media-list">
+                                        <div class="media-number">5</div>
+                                        <p class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</p>
+                                    </li>
+                                    <li class="media-list">
+                                        <div class="media-number">6</div>
+                                        <p class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="qualiti-container">
+                                <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a href="#">with huge potential</a></p>
+                                <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a href="">the stakeholders</a></p>
+                                <ul>
+                                    <li>It's easy to get a quotation, just call our office anytime</li>
+                                    <li>We'll get back to you with an initial estimate soon</li>
+                                    <li>Get ready to see results even after only 30 days</li>
+                                    <li>Ask for a quote and start improving your business</li>
+                                    <li>Just fill out the form and we'll call you right away</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,99 +251,124 @@
                     <div class="bg-services-bottom-right"></div>
                 </div>
             </div>
-            <div class="slider-clients">
-                <div class="slider-clients-text">
-                    <h3>Read Our Customer Testimonials</h3>
-                    <p>Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
-                </div>
-                <div class="slider-clients-info">
-                    <div class="slider-button-prev">
-                        <button>prev</button>
+            <div class="slider">
+                <div class="container">
+                    <div class="slider-clients-text">
+                        <h2>Read Our Customer Testimonials</h2>
+                        <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
                     </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-1.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
-                            <div>Jude Thorn - Founder</div>
+                    <div class="slider-clients-info">
+                        <div class="slider-button-prev">
+                            <button>prev</button>
                         </div>
-                    </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-2.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </p>
-                            <div>Marsha Singer - Marketer</div>
+                        <div class="card">
+                            <img class="card-image" src="img/testimonial-1.jpg" alt="clients">
+                            <div class="card-body">
+                                <p class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</p>
+                                <div class="testimonial-author">Jude Thorn - Founder</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-3.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</p>
-                            <div>Roy Smith - Developer</div>
+                        <div class="card">
+                            <img class="card-image" src="img/testimonial-2.jpg" alt="clients">
+                            <div class="card-body">
+                                <p class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </p>
+                                <div class="testimonial-author">Marsha Singer - Marketer</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-4.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</p>
-                            <div>Ronald Spice - Owner</div>
+                        <div class="card">
+                            <img class="card-image" src="img/testimonial-3.jpg" alt="clients">
+                            <div class="card-body">
+                                <p class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</p>
+                                <div class="testimonial-author">Roy Smith - Developer</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-5.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</p>
-                            <div>Lindsay Rune - Manager</div>
+                        <!--<div class="card">
+                            <img src="img/testimonial-4.jpg" alt="clients">
+                            <div class="card-clints">
+                                <p>At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</p>
+                                <div>Ronald Spice - Owner</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider-one-clients">
-                        <img src="img/testimonial-6.jpg" alt="clients">
-                        <div class="card-clints">
-                            <p>My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</p>
-                            <div>Ann Black - Consultant</div>
+                        <div class="card">
+                            <img src="img/testimonial-5.jpg" alt="clients">
+                            <div class="card-clints">
+                                <p>I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</p>
+                                <div>Lindsay Rune - Manager</div>
+                            </div>
                         </div>
+                        <div class="card">
+                            <img src="img/testimonial-6.jpg" alt="clients">
+                            <div class="card-clints">
+                                <p>My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</p>
+                                <div>Ann Black - Consultant</div>
+                            </div>
+                        </div>-->
+                        <div class="slider-button-next"><button>next</button></div>
                     </div>
-                    <div class="slider-button-next"><button>next</button></div>
                 </div>
             </div>
         </div>
         <div class="call-me" id="callme">
-            <div class="container-left">
-                <div class="call-me-text">CALL ME</div>
-                <h3 class="call-me-h3">Have Us Contact You By Filling And Submitting The Form</h3>
-                <p class="call-me-paragraph-text">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
-                <ul class="call-me-list">
-                    <li>It's very easy just fill in the form so we can call</li>
-                    <li>During the call we'll require some info about the company</li>
-                    <li>Don't hesitate to email us for any questions or inquiries</li>
-                </ul>
-            </div>
-            <div class="container-right-form">
-                <form action="call-me-form">
-                    <div>
-                        <label for="iname"></label>
-                        <input type="text" name="name" id="iname" placeholder="Name" required>
-                    </div>
-                    <div>
-                        <label for="iphone"></label>
-                        <input type="text" name="phone" id="iphone" placeholder="Phone" required>
-                    </div>
-                    <div>
-                        <label for="iemail"></label>
-                        <input type="email" name="email" id="iemail" placeholder="Email" required>
-                    </div>
-                    <div>
-                        <div><label for="plist"></label>
-                            <input type="text" name="list" id="plist"><!--Як зробити правильно-->
-                        </div>
-                        <div>
-                            <input type="checkbox" value="Agree-terms" name="Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a>and <a href="terms-conditions.html">Terms & Conditions</a>
-                        </div>
-                        <div>
-                            <button type="submit" class="button-call-me"> CALL ME</button>
+            <div class="container">
+                <div class="rows">
+                    <div class="col-lg-6">
+                        <div class="container-left">
+                            <div class="selection-title">CALL ME</div>
+                            <h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
+                            <p class="white">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
+                            <ul class="list-unstyled li-space-lg white">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's very easy just fill in the form so we can call</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">During the call we'll require some info about the company</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
+                            </li>
+                        </ul>
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="col-lg-6">
+                        <div class="container-right-form">
+                            <form action="call-me-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="lname" name="lname" required="">
+                                    <label class="label-control" for="lname">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="lphone" name="lphone" required="">
+                                    <label class="label-control" for="lphone">Phone</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-input" id="lemail" name="lemail" required="">
+                                    <label class="label-control" for="lemail">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control-select" id="lselect" required="">
+                                        <option class="select-option" value="" disabled="" selected="">Interested in...</option>
+                                        <option class="select-option" value="Off The Ground">Off The Ground</option>
+                                        <option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
+                                        <option class="select-option" value="Market Domination">Market Domination</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group checkbox white">
+                                    <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required="">I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms &amp; Conditions</a>
+                                    <div class="help-block with-errors">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button disabled">CALL ME</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>   
         </div>
         <div class="projects" id="projects">
             <div class="projects-list-tems">
