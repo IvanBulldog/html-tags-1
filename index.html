@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria - Business</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <link rel="icon" href="../img/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
     <a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a>
-    <nav class="navbar-info navbar-custom">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand logo-image" href="index.html"><img src="img/logo.svg" alt="alternative"></a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll active" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                </li>
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav>
+    <!--<nav class="navbar-info navbar-custom">
         <div class="logo">
             <img src="img/logo.svg" alt="Aria-logo">
         </div>
@@ -41,7 +98,7 @@
                 </span>
             </span>
         </div>
-    </nav>
+    </nav>-->
     <header id="home">
         <div class="border">
             <h1>BUSINESS <span class="js-rotation">TEMPLATE</span></h1>
@@ -371,274 +428,328 @@
             </div>   
         </div>
         <div class="projects" id="projects">
-            <div class="projects-list-tems">
-                <div class="projects-tems">
-                    <h3 class="projects-text-h3">PROJECTS</h3>
-                    <h2 class="projects-text-h2">Projects That We're Proud Of</h2>
-                </div>
-                <div class="projects-list">
-                    <div class="projects-list-button">
-                        <a class="button active"><span>SHOW ALL</span></a>
-                        <a class="button"><span>DESIGN</span></a>
-                        <a class="button"><span>DEVELOPMENT</span></a>
-                        <a class="button"><span>MARKETING</span></a>
-                        <a class="button"><span>SEO</span></a>
-                    </div>
-                    <div class="projects-list-img">
-                        <div><img src="img/project-1.jpg" alt=""></div>
-                        <div><img src="img/project-2.jpg" alt=""></div>
-                        <div><img src="img/project-3.jpg" alt=""></div>
-                        <div><img src="img/project-4.jpg" alt=""></div>
-                        <div><img src="img/project-5.jpg" alt=""></div>
-                        <div><img src="img/project-6.jpg" alt=""></div>
-                        <div><img src="img/project-7.jpg" alt=""></div>
-                        <div><img src="img/project-8.jpg" alt=""></div>
+            <div class="container project-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="selection-title text-center">PROJECTS</h3>
+                        <h2 class="projects-text-h2 text-center">Projects That We're Proud Of</h2>
                     </div>
                 </div>
-            </div>
-            <div class="projects-basic">
-                <div class="projects-basic-text">
-                    <h2>Our Team Of Consultants</h2>
-                    <p>We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
-                </div>
-                <div class="projects-team-members-info">
-                    <div class="team-members">
-                        <img src="img/team-1.png" alt="Members">
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="team-members">
-                        <img src="img/team-2.png" alt="Members">
-                        <p class="p-large">Veronique Smith</p>
-                        <p class="job-title">Business Developer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="team-members">
-                        <img src="img/team-3.png" alt="Members">
-                        <p class="p-large">Chris Zimerman</p>
-                        <p class="job-title">Online Marketer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="team-members">
-                        <img src="img/team-4.png" alt="Members">
-                        <p class="p-large">Mary Villalonga</p>
-                        <p class="job-title">Community Manager</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="button-group filters-button-group text-center">
+                            <a class="button is-checked"><span>SHOW ALL</span></a>
+                            <a class="button"><span>DESIGN</span></a>
+                            <a class="button"><span>DEVELOPMENT</span></a>
+                            <a class="button"><span>MARKETING</span></a>
+                            <a class="button"><span>SEO</span></a>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="project-list-image"><img src="img/project-1.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-2.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-3.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-4.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-5.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-6.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-7.jpg" alt=""></div>
+                            <div class="project-list-image"><img src="img/project-8.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about" id="about">
-            <div class="left">
-                <img src="img/about.jpg" alt="about-img">
-            </div>
-            <div class="right">
-                <div class="about-text">ABOUT</div>
-                <h2>We're Passionate About Delivering Growth Services</h2>
-                <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
-                <ul>
-                    <li>Everything we recommend has direct positive impact</li>
-                    <li>You will become an important partner of our company</li>
-                </ul> 
-                <div class="counter">
-                    <div class="cell">
-                        <div class="counter-value">231</div>
-                        <div class="counter-info">Happy<br>Users</div>
+        <div class="our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="projects-basic-text text-center">
+                            <h2>Our Team Of Consultants</h2>
+                            <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <div class="counter-value">121</div>
-                        <div class="counter-info">Issues<br>Solved</div>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value">159</div>
-                        <div class="counter-info">Good<br>Reviews</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="team-members">
+                            <img src="img/team-1.png" alt="Members">
+                            <p class="p-large">John Whitelong</p>
+                            <p class="job-title">General Manager</p>
+                            <span class="social-icons">
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="team-members">
+                            <img src="img/team-2.png" alt="Members">
+                            <p class="p-large">Veronique Smith</p>
+                            <p class="job-title">Business Developer</p>
+                            <span class="social-icons">
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="team-members">
+                            <img src="img/team-3.png" alt="Members">
+                            <p class="p-large">Chris Zimerman</p>
+                            <p class="job-title">Online Marketer</p>
+                            <span class="social-icons">
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="team-members">
+                            <img src="img/team-4.png" alt="Members">
+                            <p class="p-large">Mary Villalonga</p>
+                            <p class="job-title">Community Manager</p>
+                            <span class="social-icons">
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <span class="hexagon"></span>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contact" id="contact">
-            <div class="left-column">
-                <div class="contact-title">CONTACT</div>
-                <h2>Get In Touch Using The Form</h2>
-                <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
-                <div>
-                    <ul class="list-address-style">
-                            <li class="address">22nd Innovative Street, San Francisco, CA 94043, US</li>
-                            <li><a href="tel:003024630820">+81 720 22 126</a></li>
-                            <li><a href="tel:003024630820">+81 720 22 128</a></li>
-                            <li><a href="mailto:office@aria.com">office@aria.com</a></li>
-                        </ul>
+        <div class="counter" id="about">
+            <div class="container-custom">
+                <div class="row-custom">
+                    <div class="columns-custom">
+                        <div class="image-containere">
+                            <img class="img-fluid" src="img/about.jpg" alt="alternative">
+                        </div>
+                    </div>
+                    <div class="columns-custom">
+                        <div class="text-container-custom">
+                            <div class="selection-title">ABOUT</div>
+                            <h2>We're Passionate About Delivering Growth Services</h2>
+                            <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Everything we recommend has direct positive impact</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">You will become an important partner of our company</div>
+                                </li>
+                            </ul> 
+                            <div id="counter">
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="231">231</div>
+                                    <div class="counter-info">Happy<br>Users</div>
+                                </div>
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="121">121</div>
+                                    <div class="counter-info">Issues<br>Solved</div>
+                                </div>
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="159">159</div>
+                                    <div class="counter-info">Good<br>Reviews</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>Follow Aria On Social Media</h3>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-pinterest fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-instagram fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-behance fa-stack-1x"></i>
-                    </a>
-                </span>
             </div>
-            <div class="right-column">
-                <form action="contact-form">
-                    <div>
-                        <label for="pname"></label>
-                        <input type="text" name="name" id="pname" placeholder="Name">
+        </div>
+        <div class="form-2" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <div class="selection-title">CONTACT</div>
+                            <h2>Get In Touch Using The Form</h2>
+                            <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Innovative Street, San Francisco, CA 94043, US</li>
+                                <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 126</a></li>
+                                <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 128</a></li>
+                                <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">office@aria.com</a></li>
+                            </ul>
+                            <h3>Follow Aria On Social Media</h3>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-pinterest fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-behance fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="pemail"></label>
-                        <input type="email" name="email" id="pemail" placeholder="Email">
+                    <div class="col-lg-6">
+                        <form id="contactForm" data-toggle="validator" data-focus="false" novalidate="true">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname" required="">
+                                <label class="label-control" for="cname">Name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail" required="">
+                                <label class="label-control" for="cemail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" required=""></textarea>
+                                <label class="label-control" for="cmessage">Your message</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required="">I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button disabled">SUBMIT MESSAGE</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <label for="ptextarea"></label>
-                        <textarea name="textarea" id="ptextarea" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <label for="pcheckbox"></label>
-                        <input id="pcheckbox" type="checkbox" value="Agreed-Terms">I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
-                    </div>
-                    <div>
-                            <button type="submit" class="form-control-submit-button disabled">SUBMIT MESSAGE</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
         <footer>
             <div class="footer">
-                <div class="container-footer">
-                    <h4>Few Words About Aria</h4>
-                    <p>We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
-                </div>
-                <div class="container-footer">
-                    <h4>Links</h4>
-                    <ul class="footer-list-links">
-                        <li>
-                            <a href="#your-link">startupguide.com</a>
-                        </li>
-                        <li>
-                            <a href="terms-conditions.html">Terms &amp; Conditions</a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="container-footer">
-                    <h4>Tools</h4>
-                    <ul class="footer-list-links">
-                        <li>
-                            <a href="#your-link">startupguide.com</a>
-                        </li>
-                        <li>
-                            <a href="terms-conditions.html">Terms &amp; Conditions</a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="container-footer">
-                    <h4>Partners</h4>
-                    <ul class="list-unstyled li-space-lg">
-                        <li>
-                            <a href="#your-link">unicorns.com</a>
-                        </li>
-                        <li>
-                            <a href="#your-link">staffmanager.com</a>
-                        </li>
-                        <li>
-                            <a href="#your-link">association.gov</a>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-container">
+                                <h4>Few Words About Aria</h4>
+                                <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-container">
+                                <h4>Links</h4>
+                                <ul class="list-unstyled li-space-lg white">
+                                    <li>
+                                        <a class="white" href="#your-link">startupguide.com</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="terms-conditions.html">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-container">
+                                <h4>Tools</h4>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li>
+                                        <a class="white" href="#your-link">businessgrowth.com</a>
+                                    </li>
+                                    <li>
+                                    <a class="white" href="#your-link">influencers.com</a>
+                                    </li>
+                                    <li class="media">
+                                        <a class="white" href="#your-link">optimizer.net</a>
+                                    </li>
+                                </ul>  
+                            </div>
+                                
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-container">
+                                <h4>Partners</h4>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li>
+                                        <a class="white" href="#your-link">unicorns.com</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="#your-link">staffmanager.com</a>
+                                    </li>
+                                    <li>
+                                        <a class="white" href="#your-link">association.gov</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
-                <p class="copyright-text">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
-
     </main>
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
