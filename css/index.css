@@ -260,6 +260,62 @@ header {
     }
 }
 
+.navbar-custom .dropdown-menu {
+    margin-top: 0;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #113448;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom .dropdown-menu {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 0.75rem solid rgba(0, 0, 0, 0);
+        border-radius: 0.25rem;
+        box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
+    }
+}
+
+.navbar-custom .dropdown-item {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom .dropdown-item {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+}
+
+.navbar-custom .dropdown-item .item-text {
+    font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+    width: 100%;
+    height: 1px;
+    margin: 0.75rem auto 0.75rem auto;
+    border: none;
+    background-color: #b5bcc4;
+    opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom .dropdown-items-divide-hr {
+        width: 84%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-custom.top-nav-collapse {
+        padding: 0.375rem 1.5rem 0.375rem 2rem;
+        box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+        background-color: #113448;
+    }
+}
+
 /*@media (max-width: 768px) {
     .navbar-info .menu {
         display: none;
@@ -348,21 +404,21 @@ header {
     height: 26px;
 }
 
-.border {
+.borders {
     padding-top: 8rem;
     padding-bottom: 2.125rem;
     text-align: center;
 }
 
 @media (min-width: 768px) {
-    .border {
+    .borders {
         padding-top: 13rem;
         padding-bottom: 7.5rem;
     }
 }
 
 @media (min-width: 992px) {
-    .border {
+    .borders {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
@@ -372,19 +428,19 @@ header {
 }
 
 @media (min-width: 1200px) {
-    .border {
+    .borders {
         padding-top: 14.75rem;
         padding-bottom: 17.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .border h1 {
+    .borders h1 {
         font: 700 3.5rem/4rem "Montserrat", sans-serif;
     }
 }
 
-.border h1 {
+.borders h1 {
     margin-bottom: 0.5rem;
     color: #fff;
 }
