@@ -13,7 +13,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    <a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a>
+    <a onclick="topFunction()" class="back-to-top" id="myBtn"></a>
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <a class="navbar-brand logo-image" href="index.html"><img src="img/logo.svg" alt="alternative"></a>
         <!-- Mobile Menu Toggle Button -->
@@ -198,31 +198,45 @@
                 <div class="services-detail-info">
                     <div class="accordion-container">
                         <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
-                        <div class="item">
-                            <div class="active">
-                                <span class="services-numbers-font">1</span>
-                                <span class="accordion-title"> How Can Aria Help Your Business</span> 
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne">
+                                    <span class="" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="circle-numbering">1</span>
+                                        <span class="accordion-title">How Can Aria Help Your Business</span>
+                                    </span>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="accordion">
-                                <p class="accordion-body">At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo">
+                                    <span class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="circle-numbering">2</span>
+                                        <span class="accordion-title"> Great Strategic Business Planning</span>
+                                    </span>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.
+                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="non-active">
-                                <span class="services-numbers-font">2</span>
-                                <span class="accordion-title"> Great Strategic Business Planning</span>
-                            </div>
-                            <div class="accordion">
-                                <p class="accordion-body">Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="non-active">
-                                <span class="services-numbers-font">3</span>
-                                <span class="accordion-title"> Online Marketing Campaigns</span>
-                            </div>
-                            <div class="accordion">
-                                <p class="accordion-body">An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.</p>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree">
+                                    <span class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="circle-numbering">3</span>
+                                        <span class="accordion-title">Online Marketing Campaigns</span>
+                                    </span>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -751,9 +765,7 @@
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scripts.js"></script>
     <script src="js/rotation.js"></script>
+    <script src="js/gototop.js"></script>
 </body>
 </html>
