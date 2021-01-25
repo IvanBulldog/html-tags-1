@@ -25,6 +25,10 @@ img {
     color: #dfe5ec;
 }
 
+strong {
+    color: #484a46;
+}
+
 h3 {
     color: #484a46;
     font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
@@ -35,7 +39,7 @@ h4 {
     font: 700 1.25rem/1.625rem "Montserrat", sans-serif;
 }
 
-a.green {
+.green {
     color: #14bf98;
 }
 
@@ -925,7 +929,33 @@ h2 {
     }
 }
 
-.js-list-menu ul {
+/*
+dothent mater
+*/
+.tab {
+    justify-content: center;
+    margin-bottom: 1.125rem;
+    border-bottom: none;
+}
+
+.tab li:hover {
+  color: #14bf98;
+}
+
+.tab button.active {
+  color: #14bf98;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+#Business {
+display: block;
+}
+
+.tab ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -933,8 +963,8 @@ h2 {
     justify-content: flex-start;
 }
 
-.js-list-menu ul li {
-    margin-right: 1.625rem;
+.tab ul li {
+    margin-right: 1rem;
     margin-bottom: 0.875rem;
     padding: 0;
     border: none;
@@ -951,7 +981,7 @@ h2 {
     vertical-align: 20%;
 }
 
-.js-list-menu ul li.active {
+.tab ul li.active {
     color: #14bf98;
 }
 
@@ -991,12 +1021,16 @@ h2 {
     background-size: cover;
 }
 
-@media (min-width: 992px) {
+.tabs .services-bottom-left {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2rem;
+    padding-bottom: 5.75rem;
+}
+@media (min-width: 768px){
     .tabs .services-bottom-left {
-        max-width: 88%;
-        margin-left: 2rem;
-        padding-top: 6.75rem;
-        padding-bottom: 0;
+        max-width: 70%;
     }
 }
 
@@ -1006,6 +1040,75 @@ h2 {
         margin-right: 5rem;
         margin-left: auto;
     }
+}
+
+@media (min-width: 992px) {
+    .tabs .services-bottom-left {
+        max-width: 88%;
+        margin-left: 2rem;
+        padding-top: 6.75rem;
+        padding-bottom: 0;
+    }
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.tabs .tabcontent .list-unstyled {
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+@media (min-width: 768px) {
+    .tabs #tab-2 .list-unstyled {
+        display: inline-block;
+        width: 45%;
+        margin-top: 0;
+    }
+}
+
+.tabs .tabcontent .list-unstyled .media-number {
+    color: #14bf98;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.tabs .tabcontent .list-unstyled .media-body {
+    margin-left: 0.875rem;
+}
+
+.tabs #Qualiti .list-unstyled {
+    margin-bottom: 1.75rem;
+    width: 100%;
+}
+
+.tabs #Qualiti .list-unstyled .fas {
+    color: #14bf98;
+    font-size: 0.5rem;
+    line-height: 1.375rem;
+}
+
+.tabs #Qualiti .list-unstyled .media-body {
+    margin-left: 0.625rem;
+}
+
+@media (min-width: 768px) {
+    .tabs .tabcontent .list-unstyled {
+        display: inline-block;
+        width: 45%;
+        margin-top: 0;
+    }
+}
+
+.media-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 .progress {
@@ -1032,34 +1135,38 @@ h2 {
     transition: width 0.6s ease;
 }
 
-.tabs #tab-1 .progress {
+.tabs .tabcontent .progress {
     height: 1.375rem;
     margin-bottom: 1.125rem;
     border-radius: 0.125rem;
     background-color: #f9fafc;
 }
 
-.tabs #tab-1 .progress-bar {
+.tabs .tabcontent .progress-bar {
     display: block;
     padding-left: 1.5rem;
     border-radius: 0.125rem;
     background: linear-gradient(to bottom right, #14bf98, #1bd1a7);
 }
 
-.tabs #tab-1 .progress-bar.first {
+.tabs .tabcontent .progress-bar.first {
     width: 100%;
 }
 
-.tabs #tab-1 .progress-bar.second {
+.tabs .tabcontent .progress-bar.second {
     width: 75%;
 }
 
-.tabs #tab-1 .progress-bar.third {
+.tabs .tabcontent .progress-bar.third {
     width: 90%;
 }
 
 .detail-services {
     max-width: 100%;
+}
+
+.media {
+    display: inline-block;
 }
 
 .slider {
@@ -1828,4 +1935,3 @@ footer h4 {
 .accordion span[aria-expanded="true"] .accordion-title {
     color: #14bf98;
 }
-

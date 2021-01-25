@@ -245,76 +245,74 @@
             <div class="detail-bottom-services tabs">
                 <div class="area-1">
                     <div class="services-bottom-left">
-                        <div class="js-list-menu">
+                        <div class="tab">
                             <ul>
-                                <li class="active nav-link"><i class="fas fa-th"></i>Business</li>
-                                <li class="nav-link"><i class="fas fa-th"></i>Expertise</li>
-                                <li class="nav-link"><i class="fas fa-th"></i>Qualiti</li>
+                                <li class="tablinks active" onclick="openCity(event, 'Business')"><i class="fas fa-th"></i>Business</li>
+                                <li class="tablinks" onclick="openCity(event, 'Expertise')"><i class="fas fa-th"></i>Expertise</li>
+                                <li class="tablinks" onclick="openCity(event, 'Qualiti')"><i class="fas fa-th"></i>Qualiti</li>
                             </ul>
                         </div>
-                        <div class="js-list-text" id="tab-1">
-                            <div class="busines-container">
-                                <h4>Business Services For Companies</h4>
-                                <p>Aria provides the most innovative and customized business services in the industry. Our <a href="#services" class="green">Services</a> section shows how flexible we are for all types of budgets.</p>
-                                <div class="progress-container">
-                                    <p class="title">Business Development 100%</p>
-                                    <div class="progress">
-                                        <div class="progress-bar first">
-                                        </div>    
+                        <div id="Business" class="tabcontent">
+                            <h4>Business Services For Companies</h4>
+                            <p>Aria provides the most innovative and customized business services in the industry. Our <a href="#services" class="green">Services</a> section shows how flexible we are for all types of budgets.</p>
+                            <div class="progress-container">
+                            <p class="title">Business Development 100%</p>
+                                <div class="progress">
+                                    <div class="progress-bar first">
+                                    </div>    
+                                </div>
+                                <p class="title">Opportunity Spotting 76%</p>
+                                <div class="progress">
+                                    <div class="progress-bar second">
                                     </div>
-                                    <p class="title">Opportunity Spotting 76%</p>
-                                    <div class="progress">
-                                        <div class="progress-bar second">
-                                        </div>
-                                    </div>
-                                    <p class="title">Online Marketing 90%</p>
-                                    <div class="progress">
-                                        <div class="progress-bar third">
-                                        </div>
+                                </div>
+                                <p class="title">Online Marketing 90%</p>
+                                <div class="progress">
+                                    <div class="progress-bar third">
                                     </div>
                                 </div>
                             </div>
-                            <div class="expertise-container">
-                                <ul class="media">
-                                    <li class="media-list">
-                                        <div class="media-number">1</div>
-                                        <p class="media-body"><strong>Hight qualiti</strong> is on top of our list when it comes to the way we deliver the services</p>
-                                    </li>
-                                    <li class="media-list">
-                                        <div class="media-number">2</div>
-                                        <p class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</p>
-                                    </li>
-                                    <li class="media-list">
-                                        <div class="media-number">3</div>
-                                        <p class="media-body"><strong>Qualiti standart</strong> are important but meant to be exceeded</p>
-                                    </li>
-                                </ul>
-                                <ul class="media">
-                                    <li class="media-list">
-                                        <div class="media-number">4</div>
-                                        <p class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</p>
-                                    </li>
-                                    <li class="media-list">
-                                        <div class="media-number">5</div>
-                                        <p class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</p>
-                                    </li>
-                                    <li class="media-list">
-                                        <div class="media-number">6</div>
-                                        <p class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="qualiti-container">
-                                <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a href="#">with huge potential</a></p>
-                                <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a href="">the stakeholders</a></p>
-                                <ul>
-                                    <li>It's easy to get a quotation, just call our office anytime</li>
-                                    <li>We'll get back to you with an initial estimate soon</li>
-                                    <li>Get ready to see results even after only 30 days</li>
-                                    <li>Ask for a quote and start improving your business</li>
-                                    <li>Just fill out the form and we'll call you right away</li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div id="Expertise" class="tabcontent">
+                            <ul class="media list-unstyled">
+                                <li class="media-list">
+                                    <div class="media-number">1</div>
+                                    <p class="media-body"><strong>Hight qualiti</strong> is on top of our list when it comes to the way we deliver the services</p>
+                                </li>
+                                <li class="media-list">
+                                    <div class="media-number">2</div>
+                                    <p class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</p>
+                                </li>
+                                <li class="media-list">
+                                    <div class="media-number">3</div>
+                                    <p class="media-body"><strong>Qualiti standart</strong> are important but meant to be exceeded</p>
+                                </li>
+                            </ul>
+                            <ul class="media list-unstyled">
+                                <li class="media-list">
+                                    <div class="media-number">4</div>
+                                    <p class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</p>
+                                </li>
+                                <li class="media-list">
+                                    <div class="media-number">5</div>
+                                    <p class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</p>
+                                </li>
+                                <li class="media-list">
+                                    <div class="media-number">6</div>
+                                    <p class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="Qualiti" class="tabcontent">
+                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#">with huge potential</a></p>
+                            <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="">the stakeholders</a></p>
+                            <ul class="list-unstyled">
+                                <li class="media-list"><i class="fas fa-square"></i><div class="media-body">It's easy to get a quotation, just call our office anytime</div></li>
+                                <li class="media-list"><i class="fas fa-square"></i><div class="media-body">We'll get back to you with an initial estimate soon</div></li>
+                                <li class="media-list"><i class="fas fa-square"></i><div class="media-body">Get ready to see results even after only 30 days</div></li>
+                                <li class="media-list"><i class="fas fa-square"></i><div class="media-body">Ask for a quote and start improving your business</div></li>
+                                <li class="media-list"><i class="fas fa-square"></i><div class="media-body">Just fill out the form and we'll call you right away</div></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -767,5 +765,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="js/rotation.js"></script>
     <script src="js/gototop.js"></script>
+    <script src="js/acordionmenu.js"></script>
+    <script src="js/scrollnavbar.js"></script>
 </body>
 </html>
