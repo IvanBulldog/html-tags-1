@@ -1,17 +1,17 @@
 document.querySelector('.btn-sort-1')
- .addEventListener('click', () => showTab(1) );
+ .addEventListener('click', () => showTabContent() );
 
 document.querySelector('.btn-sort-2')
- .addEventListener('click', () => showTab('design', 2) );
+ .addEventListener('click', () => showTabContent('design') );
 
 document.querySelector('.btn-sort-3')
- .addEventListener('click', () => showTab('development', 3) );
+ .addEventListener('click', () => showTabContent('development') );
 
  document.querySelector('.btn-sort-4')
- .addEventListener('click', () => showTab('marketing', 4) );
+ .addEventListener('click', () => showTabContent('marketing') );
 
  document.querySelector('.btn-sort-5')
- .addEventListener('click', () => showTab('seo', 5) );
+ .addEventListener('click', () => showTabContent('seo') );
 
 const tabData = [
   {
@@ -56,12 +56,8 @@ const tabData = [
   }
 ]
 
- function showTab(category, num) {
-    document.querySelectorAll('.button')
-           .forEach( tab => tab.classList.remove('is-checked'));
-   document
-     .querySelector('.btn-sort-'+num)
-     .classList.add('is-checked');
+ function showTabContent(category) {
+
    const imagesToShow = 
         category ? tabData.filter( el => el.categories.includes(category)) 
         : tabData;
@@ -72,4 +68,4 @@ const tabData = [
    } 
  }
 
- showTab();
+ showTabContent();
