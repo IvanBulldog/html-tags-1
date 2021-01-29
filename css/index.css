@@ -7,7 +7,7 @@ a {
     text-decoration: underline;
 }
 
-.none-block {
+.hidden {
     display: none;
 }
 
@@ -950,30 +950,25 @@ h2 {
 /*
 dothent mater
 */
-.tab {
+.tab-buttons {
     justify-content: center;
     margin-bottom: 1.125rem;
     border-bottom: none;
 }
 
-.tab li:hover {
+.tab-buttons li:hover {
   color: #14bf98;
 }
 
-.tab button.active {
+.tab-buttons button.active {
   color: #14bf98;
 }
 
 .tabcontent {
-  display: none;
   padding: 6px 12px;
 }
 
-.block {
-    display: block;
-}
-
-.tab ul {
+.tab-buttons ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -981,7 +976,7 @@ dothent mater
     justify-content: flex-start;
 }
 
-.tab ul li {
+.tab-buttons ul li {
     margin-right: 1rem;
     margin-bottom: 0.875rem;
     padding: 0;
@@ -993,13 +988,13 @@ dothent mater
     transition: all 0.2s ease;
 }
 
-.tabs .nav-link .fas {
+.tab-container .nav-link .fas {
     margin-right: 0.125rem;
     font-size: 0.875rem;
     vertical-align: 20%;
 }
 
-.tab ul li.active {
+.tab-buttons ul li.active {
     color: #14bf98;
 }
 
@@ -1074,48 +1069,48 @@ dothent mater
     list-style: none;
 }
 
-.tabs .tabcontent .list-unstyled {
+.tab-container .tabcontent .list-unstyled {
     margin-top: 1.75rem;
     margin-bottom: 0;
     vertical-align: top;
 }
 
 @media (min-width: 768px) {
-    .tabs #tab-2 .list-unstyled {
+    .tab-container #tab-2 .list-unstyled {
         display: inline-block;
         width: 45%;
         margin-top: 0;
     }
 }
 
-.tabs .tabcontent .list-unstyled .media-number {
+.tab-container .tabcontent .list-unstyled .media-number {
     color: #14bf98;
     font-weight: 600;
     font-size: 2rem;
     line-height: 2rem;
 }
 
-.tabs .tabcontent .list-unstyled .media-body {
+.tab-container .tabcontent .list-unstyled .media-body {
     margin-left: 0.875rem;
 }
 
-.tabs #Qualiti .list-unstyled {
+.tab-container #Qualiti .list-unstyled {
     margin-bottom: 1.75rem;
     width: 100%;
 }
 
-.tabs #Qualiti .list-unstyled .fas {
+.tab-container #Qualiti .list-unstyled .fas {
     color: #14bf98;
     font-size: 0.5rem;
     line-height: 1.375rem;
 }
 
-.tabs #Qualiti .list-unstyled .media-body {
+.tab-container #Qualiti .list-unstyled .media-body {
     margin-left: 0.625rem;
 }
 
 @media (min-width: 768px) {
-    .tabs .tabcontent .list-unstyled {
+    .tab-container .tabcontent .list-unstyled {
         display: inline-block;
         width: 45%;
         margin-top: 0;
@@ -1153,29 +1148,29 @@ dothent mater
     transition: width 0.6s ease;
 }
 
-.tabs .tabcontent .progress {
+.tab-container .tabcontent .progress {
     height: 1.375rem;
     margin-bottom: 1.125rem;
     border-radius: 0.125rem;
     background-color: #f9fafc;
 }
 
-.tabs .tabcontent .progress-bar {
+.tab-container .tabcontent .progress-bar {
     display: block;
     padding-left: 1.5rem;
     border-radius: 0.125rem;
     background: linear-gradient(to bottom right, #14bf98, #1bd1a7);
 }
 
-.tabs .tabcontent .progress-bar.first {
+.tab-container .tabcontent .progress-bar.first {
     width: 100%;
 }
 
-.tabs .tabcontent .progress-bar.second {
+.tab-container .tabcontent .progress-bar.second {
     width: 75%;
 }
 
-.tabs .tabcontent .progress-bar.third {
+.tab-container .tabcontent .progress-bar.third {
     width: 90%;
 }
 
