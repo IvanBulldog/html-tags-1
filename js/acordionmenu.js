@@ -1,13 +1,14 @@
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+const   jsTriggers = document.querySelectorAll('.tablinks'),
+        jsContents = document.querySelectorAll('.tabcontent');
+jsTriggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function() {
+        const   id = this.getAttribute('data-tab'),
+                content = document.querySelector('.tabcontent[data-tab="'+id+'"]'),
+                activeTrigger = document.querySelector('.tablinks.active'),
+                activeContent = document.querySelector('.tabcontent.block');
+        activeTrigger.classList.remove('active'); 
+        trigger.classList.add('active');
+        activeContent.classList.remove("block");
+        content.classList.add("block");
+   });
+});
