@@ -24,31 +24,34 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll active" href="index.html#home">
+                        <a class="nav-link page-scroll active" href="#home">
                             HOME <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#intro">INTRO</a>
+                        <a class="nav-link page-scroll" href="#intro">INTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#services">SERVICES</a>
+                        <a class="nav-link page-scroll" href="#services">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#callme">CALL ME</a>
+                        <a class="nav-link page-scroll" href="#callme">CALL ME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#projects">PROJECTS</a>
+                        <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
                     </li>
+                    <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link page-scroll dropdown-toggle" href="#about" data-toggle="dropdown" aria-expanded="false">ABOUT </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="terms-conditions.html">TERMS CONDITIONS</a></li>
-                            <li><a class="dropdown-item" href="privacy-policy.html">PRIVACY POLICY</a></li>
-                        </ul>
+                        <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        </div>
                     </li>
+                    <!-- end of dropdown menu -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
+                        <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
@@ -191,12 +194,12 @@
                                 <div class="form-container">
                                     <form id="privacyForm" data-toggle="validator" data-focus="false" novalidate="true">
                                         <div class="form-group">
-                                            <input type="text" class="form-control-input" id="pname" required="">
-                                            <label class="label-control" for="pname">Name</label>
+                                            <input type="text" class="form-control-input" placeholder="Name" id="pname" required="">
+                                            <label class="label-control" for="pname"></label>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control-input" id="pemail" required="">
-                                            <label class="label-control" for="pemail">Email</label>
+                                            <input type="email" class="form-control-input" placeholder="Email" id="pemail" required="">
+                                            <label class="label-control" for="pemail"></label>
                                         </div>
                                         <div class="form-group">
                                             <select class="form-control-select" id="pselect" required="">

@@ -311,69 +311,11 @@ a.back-to-top {
     }
 }
 
-/*@media (max-width: 768px) {
-    .navbar-info .menu {
-        display: none;
-    }
-}*/
-
 @media (min-width: 992px) {
     .details-top-servisec {
         height: 34.625rem;
     }
 }
-
-/*@media (min-width: 768px) {
-    .navbar-info {
-        padding: 2.125rem 1.5rem 2.125rem 2rem;
-        display: flex;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar-info {
-        padding-right: 5rem;
-        padding-left: 5rem;
-    }
-}
-
-.logo {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-}
-
-.logo img {
-    width: 113px;
-    height: 32px;
-}
-
-@media (min-width: 768px) {
-    .menu {
-        display: flex;
-        flex-basis: auto;
-        flex-grow: 1;
-        align-items: center;
-    }
-}
-
-@media (min-width: 768px) {
-    .menu ul {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        margin-left: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.menu ul li a {
-    padding: 10px 12px;
-    font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
-    color: white;
-    text-decoration: none;
-}*/
 
 .hexagon {
     width: 1.625rem;
@@ -383,13 +325,6 @@ a.back-to-top {
     background-size: 1.625rem 1.625rem;
     transition: all 0.2s ease;
 }
-
-/*.fa-stack-1x {
-    font-size: 0.6875rem;
-    line-height: 1.625rem;
-    color: #fff;
-    transition: all 0.2s ease;
-}*/
 
 .menu [for="soc-icon"] {
     background-image: url(../img/hexagon-green.svg);
