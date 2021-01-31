@@ -9,5 +9,5 @@ window.addEventListener('scroll', function scrollFunctionTop() {
 });
 
 scrollFunctionBtn.addEventListener('click', function fuctionTop() {
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 0; //scroll on click
 });
